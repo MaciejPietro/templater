@@ -24,6 +24,7 @@
                 ]
             },
             placeholder: '',
+            theme: 'snow'
         });
         quill.on('text-change', function() {
             const value = document.getElementsByClassName('ql-editor')[0].innerHTML;

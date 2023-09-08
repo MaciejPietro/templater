@@ -16,7 +16,6 @@ class Login extends Component
     protected $listeners = ['close_pass' => 'close_forgot_password'];
 
 
-
     function show_forgot_password() {
         $this->forgot_password = true;
         

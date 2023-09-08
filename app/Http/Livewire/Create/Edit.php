@@ -12,7 +12,7 @@ class Edit extends Component
 
 
     public $name = 'Arkadiusz Srebrzyński';
-    public $role = '';
+    public $position = '';
 
     public $phone = '';
     public $email = '';
@@ -37,6 +37,14 @@ class Edit extends Component
 
         if(isset($user->email)  ) {
             $this->email = $user->email;
+        }
+
+        if(isset($user->phone)  ) {
+            $this->phone = $user->phone;
+        }
+
+        if(isset($user->position)  ) {
+            $this->position = $user->position;
         }
     }
 

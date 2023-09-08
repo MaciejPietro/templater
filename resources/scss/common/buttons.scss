@@ -5,3 +5,7 @@
 .btn--gray {
     @apply bg-gray-300 text-gray-900 hover:bg-gray-400;
 }
+
+.btn--red {
+    @apply bg-red-700  hover:bg-red-600;
+}

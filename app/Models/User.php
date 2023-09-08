@@ -28,7 +28,11 @@ class User extends Authenticatable
         'last_name',
         'name',
         'email',
+        'position',
+        'phone',
         'password',
+        'password',
+        'role'
     ];
 
     /**
@@ -59,4 +63,9 @@ class User extends Authenticatable
      */
     protected $appends = [
     ];
+
+    public function getRoles()
+    {
+        return $this->getRoleNames();
+    }
 }

@@ -4,8 +4,8 @@
           @endif
       </div>
       <input class="input-md mt-1 sm:mt-2 @error($slug) invalid @enderror" placeholder="{{ $placeholder }}"
-          wire:model.debounce.500ms="{{ $slug }}" type="{{ isset($type) ? $type : 'text' }}"
-          value="{{ $value }}" required />
+          wire:model.debounce.500ms="{{ $value ?: $slug }}" type="{{ isset($type) ? $type : 'text' }}"
+          @if (isset($required) && $required) required @endif />
       @error($slug)
           <span class="error">{{ $message }}</span>
       @enderror

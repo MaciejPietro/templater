@@ -6,6 +6,12 @@
         return url()->current() === route($route) ? 'bg-blue-900 bg-opacity-25' : '';
     }
     
+    $is_admin = auth()
+        ->user()
+        ->hasRole('admin');
+    
+    $admin_items = [];
+    
     $items = [
         [
             'label' => 'Dashboard',
@@ -18,6 +24,14 @@
             'route' => 'create',
         ],
     ];
+    
+    if ($is_admin) {
+        $admin_items[] = [
+            'label' => 'Users',
+            'icon' => 'users',
+            'route' => 'users',
+        ];
+    }
     
     // dd(route('dashboard.dashboard'));
     
@@ -98,6 +112,24 @@
                                         </a>
                                     </li>
                                 @endforeach
+
+                                @if (count($admin_items))
+                                    <li class="pt-2">
+                                        <div class="text-xs font-semibold leading-6 text-gray-200 pl-2">Admin</div>
+                                        <ul role="list" class="mt-2 space-y-1">
+                                            @foreach ($admin_items as $item)
+                                                <li>
+
+                                                    <a class="text-white group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold {{ is_current($item['route']) }}"
+                                                        href="{{ route($item['route']) }}">
+                                                        @include('icons.' . $item['icon'])
+                                                        {{ $item['label'] }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
+                                @endif
 
                                 <li class="pt-2 !mt-4 block border-t border-gray-800">
                                     <div>

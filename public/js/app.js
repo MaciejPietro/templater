@@ -3257,11 +3257,16 @@ var module_default = src_default;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
 /* harmony import */ var _components_copyToClipboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/copyToClipboard */ "./resources/js/components/copyToClipboard.js");
+/* harmony import */ var _components_toast__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/toast */ "./resources/js/components/toast.js");
+/* harmony import */ var toastify_js_src_toastify_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! toastify-js/src/toastify.css */ "./node_modules/toastify-js/src/toastify.css");
+
+
 
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
 (0,_components_copyToClipboard__WEBPACK_IMPORTED_MODULE_1__["default"])();
+(0,_components_toast__WEBPACK_IMPORTED_MODULE_2__["default"])();
 
 /***/ }),
 
@@ -3309,6 +3314,51 @@ __webpack_require__.r(__webpack_exports__);
       }).showToast();
     });
   }
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/toast.js":
+/*!******************************************!*\
+  !*** ./resources/js/components/toast.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var toastify_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! toastify-js */ "./node_modules/toastify-js/src/toastify.js");
+/* harmony import */ var toastify_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(toastify_js__WEBPACK_IMPORTED_MODULE_0__);
+
+var toast = {
+  showSuccess: function showSuccess(msg) {
+    toastify_js__WEBPACK_IMPORTED_MODULE_0___default()({
+      text: msg,
+      duration: 3000,
+      newWindow: true,
+      close: false,
+      gravity: "top",
+      position: "right",
+      stopOnFocus: true,
+      style: {
+        background: "#00b09b"
+      },
+      onClick: function onClick() {} // Callback after click
+    }).showToast();
+  }
+};
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
+  window.livewire.on('userAdded', function () {
+    toast.showSuccess("User added successfully");
+  });
+  window.livewire.on('userDeleted', function () {
+    toast.showSuccess("User deleted successfully");
+  });
+  window.livewire.on('userUpdated', function () {
+    toast.showSuccess("User updated successfully");
+  });
 }
 
 /***/ }),

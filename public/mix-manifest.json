@@ -1,4 +1,8 @@
 {
-    "/js/app.js": "/js/app.js?id=130a46468d9029b136439f1f984ed0f3",
-    "/css/app.css": "/css/app.css?id=0b2d0e99070689326df504efaf5fe792"
+    "/js/app.js": "/js/app.js?id=5135ebbcc19eefd5c92019d0791ecf12",
+    "/css/app.css": "/css/app.css?id=8f90166945e9035f996cc9466c4dc7e8",
+    "/images/icons/icon-email.png": "/images/icons/icon-email.png?id=c6e22637431064111680ae822923c95c",
+    "/images/icons/icon-location.png": "/images/icons/icon-location.png?id=47964d8778dfe35a072f6cba7567b893",
+    "/images/icons/icon-phone.png": "/images/icons/icon-phone.png?id=2d8ce33e1b9d9e78cb2ab255b09c1ae9",
+    "/images/icons/icon-web.png": "/images/icons/icon-web.png?id=84465d1cbf47cb83177a3b750013cf8c"
 }

@@ -1,5 +1,9 @@
-input[type="email"], input[type="password"], input[type="text"], textarea, .ql-editor {
+input[type="email"], input[type="password"], input[type="text"], textarea, select {
         @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#ccc] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6
+}
+
+select {
+
 }
 
 textarea, .ql-editor {
@@ -16,10 +20,18 @@ textarea {
 
 .ql-clipboard {
     @apply hidden;
-    }
+}
 
-    .ql-toolbar {
-        @apply hidden;
-    }
+ 
     
-  
+.ql-container.ql-snow {
+    @apply rounded-b-md;
+}
+.ql-toolbar.ql-snow {
+    @apply rounded-t-md;
+}
+
+
+.error_messages li, .error {
+    @apply text-xs text-red-700 mt-1;
+}

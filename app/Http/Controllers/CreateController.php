@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Application;
 use Illuminate\Http\Request;
 use App\Services\UserService;
 use App\Services\ReceiptService;

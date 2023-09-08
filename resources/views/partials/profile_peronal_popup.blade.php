@@ -31,6 +31,23 @@
                     'placeholder' => '',
                     'value' => '',
                 ])
+
+                @include('partials.input', [
+                    'name' => 'Phone',
+                    'slug' => 'phone',
+                    'placeholder' => '',
+                    'value' => '',
+                ])
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                @include('partials.input', [
+                    'name' => 'Position',
+                    'slug' => 'position',
+                    'placeholder' => '',
+                    'value' => '',
+                ])
+
+
             </div>
         </div>
 

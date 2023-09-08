@@ -5,9 +5,9 @@ use App\Http\Livewire\User\Register;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UsersController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CreateController;
-use App\Http\Controllers\ZendeskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +34,8 @@ Route::get('/user-logout',  [UserController::class, 'logout'])->name('user.logou
 
 
 Route::get('/create', [CreateController::class, 'index'])->name('create')->middleware(['auth']);
+Route::get('/users', [UsersController::class, 'index'])->name('users')->middleware(['auth']);
+
 
 
 Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.', 'middleware' => ['auth']], function () {

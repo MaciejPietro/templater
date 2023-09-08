@@ -18,7 +18,7 @@ class AddNewFieldsInUsersTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('phone', 32)->nullable();
-            $table->string('gender', 32)->nullable();
+
         });
     }
 
@@ -34,7 +34,6 @@ class AddNewFieldsInUsersTable extends Migration
             $table->dropColumn('first_name');
             $table->dropColumn('last_name');
             $table->dropColumn('phone');
-            $table->dropColumn('gender');
         });
     }
 }

@@ -20,10 +20,10 @@
             <div>
                 <div class="flex items-center justify-between">
                     <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
-                    <button type="button" class="font-semibold text-indigo-600 hover:text-indigo-500 text-sm"
+                    {{-- <button type="button" class="font-semibold text-indigo-600 hover:text-indigo-500 text-sm"
                         wire:click="show_forgot_password()">
                         Forgot Password?
-                    </button>
+                    </button> --}}
                 </div>
                 <div class="mt-2">
                     <input class="{{ $errors->has('password') ? 'invalid' : '' }}" id="password" name="password"

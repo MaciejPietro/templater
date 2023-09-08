@@ -1,5 +1,5 @@
 @php
-    $profile_data = [['key' => 'First name', 'value' => $first_name], ['key' => 'Last name', 'value' => $last_name], ['key' => 'Email', 'value' => $email]];
+    $profile_data = [['key' => 'First name', 'value' => $first_name], ['key' => 'Last name', 'value' => $last_name], ['key' => 'Email', 'value' => $email], ['key' => 'Phone', 'value' => $phone], ['key' => 'Position', 'value' => $position]];
 @endphp
 
 <div class="w-full max-w-3xl">

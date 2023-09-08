@@ -1,0 +1,17 @@
+<?php return array (
+  'create.edit' => 'App\\Http\\Livewire\\Create\\Edit',
+  'dashboard.password.password-change' => 'App\\Http\\Livewire\\Dashboard\\Password\\PasswordChange',
+  'dashboard.profile.contact' => 'App\\Http\\Livewire\\Dashboard\\Profile\\Contact',
+  'dashboard.profile.profile-edit' => 'App\\Http\\Livewire\\Dashboard\\Profile\\ProfileEdit',
+  'home' => 'App\\Http\\Livewire\\Home',
+  'quill' => 'App\\Http\\Livewire\\Quill',
+  'user.add-user' => 'App\\Http\\Livewire\\User\\AddUser',
+  'user.edit-user' => 'App\\Http\\Livewire\\User\\EditUser',
+  'user.login' => 'App\\Http\\Livewire\\User\\Login',
+  'user.password-reset' => 'App\\Http\\Livewire\\User\\PasswordReset',
+  'user.password-reset-form' => 'App\\Http\\Livewire\\User\\PasswordResetForm',
+  'user.register' => 'App\\Http\\Livewire\\User\\Register',
+  'user.user-form' => 'App\\Http\\Livewire\\User\\UserForm',
+  'user.usermenu-panel' => 'App\\Http\\Livewire\\User\\UsermenuPanel',
+  'user.users-list' => 'App\\Http\\Livewire\\User\\UsersList',
+);

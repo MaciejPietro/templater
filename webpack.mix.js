@@ -16,6 +16,7 @@ mix.js("resources/js/app.js", "public/js")
     .options({
         postCss: [tailwindcss("./tailwind.config.js")],
     })
+    .copy('resources/images', 'public/images')
     .disableSuccessNotifications()
     .version();
 

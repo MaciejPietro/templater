@@ -15,8 +15,8 @@
         ])
 
         @include('partials.input', [
-            'name' => 'Role',
-            'slug' => 'role',
+            'name' => 'Position',
+            'slug' => 'position',
             'placeholder' => '',
             'value' => '',
         ])
@@ -74,7 +74,7 @@
                 </div>
             </button>
             <div class="bg-white">
-                @include('templates.classical')
+                @include('templates.classical.template')
             </div>
         </div>
     </div>
