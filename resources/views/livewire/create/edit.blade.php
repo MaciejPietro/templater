@@ -3,7 +3,7 @@
 
         <div>
             <div class="text-gray-700 font-semibold mb-2">Text</div>
-            <livewire:quill :value="$text">
+            <livewire:quill :value="$text" field="text">
         </div>
 
         @include('partials.input', [
@@ -55,12 +55,10 @@
 
         </fieldset>
 
-        @include('partials.textarea', [
-            'name' => 'Footer',
-            'slug' => 'footer',
-            'placeholder' => '',
-            'value' => '',
-        ])
+        <div>
+            <div class="text-gray-700 font-semibold mb-2">Footer</div>
+            <livewire:quill :value="$footer" field="footer">
+        </div>
 
     </div>
 

@@ -50,8 +50,8 @@ class Edit extends Component
 
 
 
-    public function quill_value_updated($value){
-        $this->text = $value;
+    public function quill_value_updated($value, $field){
+        $this->{$field} = $value;
     }
     
 

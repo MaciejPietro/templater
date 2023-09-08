@@ -103,24 +103,23 @@
                     </tr>
                 </tbody>
             </table>
-            <table>
-                <tbody>
-                    <tr>
-                        <td style="padding: 40px">
-                            <div style="border-top: 1px solid #DFE3EF"></div>
-                        </td>
-                    </tr>
-                    @if ($footer)
+            @if ($footer)
+                <table style="width: 100%">
+                    <tbody>
                         <tr>
-                            <td style="padding-bottom: 0px; padding: 0px 40px 40px">
-                                <p style="font-size: 12px; font-family: 'Arial'; line-height: 1.5; color: #B8BDCA;">
-                                    {{ $footer }}
-                                </p>
+                            <td style="padding: 40px; display: block; width: 100%">
+                                <div style="border-top: 1px solid #DFE3EF"></div>
                             </td>
                         </tr>
-                    @endif
-                </tbody>
-            </table>
+                        <tr>
+                            <td
+                                style="padding-bottom: 0px; padding: 0px 40px 40px; font-size: 12px; font-family: 'Arial'; line-height: 1.5; color: #B8BDCA;">
+                                {!! $footer !!}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            @endif
         </tbody>
     </table>
 </div>
