@@ -1,17 +1,17 @@
 @php
-    
+
     function is_current($route)
     {
         // dd(route($route));
         return url()->current() === route($route) ? 'bg-blue-900 bg-opacity-25' : '';
     }
-    
+
     $is_admin = auth()
         ->user()
         ->hasRole('admin');
-    
+
     $admin_items = [];
-    
+
     $items = [
         [
             'label' => 'Dashboard',
@@ -24,7 +24,7 @@
             'route' => 'create',
         ],
     ];
-    
+
     if ($is_admin) {
         $admin_items[] = [
             'label' => 'Users',
@@ -32,11 +32,11 @@
             'route' => 'users',
         ];
     }
-    
+
     // dd(route('dashboard.dashboard'));
-    
+
     $user = Auth::user();
-    
+
 @endphp
 
 
@@ -97,7 +97,7 @@
         {{-- DESKTOP --}}
         <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
             <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6">
-                <div class="pt-4">@include('icons.logo')</div>
+                <div class="pt-4 flex items-center gap-2 text-blue-300">@include('icons.logo') Templater</div>
                 <nav class="flex flex-1 flex-col mt-6">
                     <ul role="list" class="flex flex-1 flex-col gap-y-7">
                         <li>

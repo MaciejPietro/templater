@@ -23,17 +23,17 @@ class UserSeeder extends Seeder
         $user1 = User::create([
             'first_name' => 'Root',
             'last_name' => 'Admin',
-            'email' => 'admin@il2d.com',
+            'email' => 'admin@gmail.com',
             'password' => Hash::make('password'),
         ]);
         $user1->assignRole([$admin_role->id]);
 
         $user1 = User::create([
-            'first_name' => 'Arkadiusz',
-            'last_name' => 'Srebrzyński',
+            'first_name' => 'Jan',
+            'last_name' => 'Kowalski',
             'position' => 'Head of IT',
-            'phone' => '+48 533 081 626',
-            'email' => 'arkadiusz.srebrzynski@classicalschool.edu.pl',
+            'phone' => '+48 111 222 333',
+            'email' => 'jan.kowalski.head.of.it@gmail.com',
             'password' => Hash::make('password'),
         ]);
         $user1->assignRole([$user_role->id]);

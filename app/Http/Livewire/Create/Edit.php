@@ -11,13 +11,13 @@ class Edit extends Component
     public $text = '';
 
 
-    public $name = 'Arkadiusz Srebrzyński';
+    public $name = '';
     public $position = '';
 
     public $phone = '';
     public $email = '';
-    public $address = 'Plac Trzech Krzyży 16, 00-499 Warszawa';
-    public $website = 'classicalschool.edu.pl';
+    public $address = '';
+    public $website = '';
 
     public $footer = 'The content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.';
 
@@ -53,7 +53,7 @@ class Edit extends Component
     public function quill_value_updated($value, $field){
         $this->{$field} = $value;
     }
-    
+
 
     public function render()
     {

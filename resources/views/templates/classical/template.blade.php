@@ -21,7 +21,7 @@
                     <tr>
                         <td style="vertical-align:top; padding-left: 40px">
                             <img width="130"
-                                src="https://ci4.googleusercontent.com/proxy/2ccoLtIAu4dQ-tiYRwM7poAA-HctbLeqLRVsrWUhNRWny_0D7DpqFE4VqtE7aGADp6L6XqCETiEUBd8kG87UXslKM77AcD12YD-4zjs9BveqKyc=s0-d-e1-ft#https://drive.google.com/uc?id=1_OsS7sEpQyHUHRJpa0d9WK77gUAOz815"
+                                src="https://cdn-icons-png.flaticon.com/512/5556/5556499.png"
                                 style="display:block;max-width:130px" class="CToWUd" data-bit="iit">
                         </td>
 

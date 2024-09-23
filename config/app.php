@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Classical School'),
+    'name' => env('APP_NAME', 'Templater'),
 
     /*
     |--------------------------------------------------------------------------
